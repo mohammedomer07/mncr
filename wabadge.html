@@ -1,0 +1,62 @@
+<div class="social-floating">
+    <!-- WhatsApp -->
+    <a href="https://wa.me/919966955540"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="social-btn whatsapp"
+       aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</div>
+
+<style>
+.social-floating{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    z-index:999999;
+}
+
+.social-btn{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    text-decoration:none;
+    font-size:34px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.3);
+    transition:all 0.3s ease;
+}
+
+.social-btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 6px 18px rgba(0,0,0,0.4);
+}
+
+/* WhatsApp Green */
+.whatsapp{
+    background:#25D366;
+}
+
+/* Mobile */
+@media (max-width:768px){
+    .social-floating{
+        right:15px;
+        bottom:15px;
+        gap:10px;
+    }
+
+    .social-btn{
+        width:55px;
+        height:55px;
+        font-size:30px;
+    }
+}
+</style>
